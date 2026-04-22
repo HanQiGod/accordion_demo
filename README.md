@@ -2,6 +2,13 @@
 
 一个基于 Flutter 的手风琴组件示例项目，核心实现为 `HsAccordion`。项目演示了 FAQ、设置分组、说明信息折叠等常见场景下的单开式折叠面板写法，并提供了较完整的样式扩展能力。
 
+## Flutter Hero动画完全指南：从入门到精通的共享元素过渡！
+## 文章地址[https://mp.weixin.qq.com/s/3qG5P6_eTLzPKdd6FtVitQ]
+
+### 展示图
+![展示图](assets/images/accordion_demo.gif)
+
+
 ## 项目定位
 
 这个仓库更接近“组件 Demo”而不是完整业务应用：
