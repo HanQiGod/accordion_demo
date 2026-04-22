@@ -57,11 +57,6 @@ test/
 - `lib/src/widgets/hs_accordion.dart`：组件和数据结构定义
 - `test/widget_test.dart`：当前仍是 Flutter 模板测试，尚未与项目实际页面同步
 
-## 环境要求
-
-- Flutter 开发环境可用
-- Dart SDK 版本需兼容 `pubspec.yaml` 中声明的 `sdk: ^3.9.2`
-
 ## 组件用法
 
 ### 基础示例
@@ -181,15 +176,6 @@ HsAccordion(
 - 使用 `ClipRect` 避免收起动画阶段内容溢出
 
 这意味着它适合中小规模列表场景；如果未来需要处理超长列表或复杂嵌套，可以考虑进一步封装为支持懒加载的列表版本。
-
-## 校验结果
-
-基于当前代码，已确认以下状态：
-
-- `flutter analyze` 通过，没有静态分析问题
-- `flutter test` 未通过
-
-测试失败原因不是组件本身报错，而是 `test/widget_test.dart` 仍保留 Flutter 默认计数器测试，断言内容与当前项目页面不一致。当前测试文件期待页面中存在数字计数器和 `+` 按钮，但实际首页已经改为手风琴 Demo 页面，因此会失败。
 
 ## 后续建议
 
